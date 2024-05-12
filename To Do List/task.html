@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="./task.css">
+    <title>Tasks</title>
+</head>
+<body>
+    <div id="main">
+        <div id="main1">
+            <img class="img1" src="./checklist-1295319_1280.webp" alt="">
+            <li><img src="./Task-List-PNG-Download-Image.png" alt="">Tasks</li>
+            <li><img src="./category.jpeg" alt="">Category <img class="img2" src="./down-arrow.svg" alt=""></li>
+            <li><img src="./Settings-PNG-Free-Download.png" alt="">Settings</li>
+        </div>
+        <div id="main2">
+         <br><br><span>All Your Tasks</span> 
+         <div class="main2-1">
+            <label>Tasks</label>
+            <div class="task-btn">
+               <button>All</button>
+               <button>Done</button>
+               <button>Not Done</button>
+            </div>
+            
+         </div>  
+         <div id="addButton" onclick="popupFn()">
+            <span>Add task</span>
+        </div>
+        </div>
+    </div>
+    <div id="overlay"></div>
+    <div class="popUp">
+          <br><Span class="sp1">Insert Name
+          </Span>
+          <br><input type="text" id="taskName" placeholder=" Task Name">
+          <br><br><span class="sp2">Select Category</span>
+          <br><select name="category" id="category">
+            <option value="School">School</option>
+            <option value="College">College</option>
+            <option value="Work">Work</option>
+            <option value="None">None</option>
+          </select>
+          <button>Add task</button>
+
+    </div>
+
+    <script src="./task.js"></script>
+</body>
+</html>
